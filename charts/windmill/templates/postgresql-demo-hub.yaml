@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: postgres
-        image: postgres:18
+        image: docker.io/library/postgres:18
         env:
         - name: POSTGRES_USER
           value: {{ index .Values "hub-postgresql" "auth" "postgresUser" }}
@@ -63,7 +63,7 @@ spec:
     spec:
       containers:
       - name: postgres
-        image: postgres:18
+        image: docker.io/library/postgres:18
         env:
         - name: POSTGRES_USER
           value: {{ index .Values "hub-postgresql" "auth" "postgresUser" }}
